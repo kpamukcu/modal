@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            #container{
+                display: none;
+                justify-content: center;
+                align-items: flex-start;
+                background-color: rgba(0,0,0,.2);
+                z-index: 2;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100vh;
+            }
+
+            #myModal{
+                display: flex;
+                flex-direction: column;
+                width: 550px;
+                border: 1px solid #d3d3d3;
+                padding: 15px;
+                border-radius: 10px;
+                background-color: #fff;
+                margin-top: 50px;
+                box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.4);
+            }
+
+            #modalBody{
+                overflow-y: scroll;
+                height: 300px;
+                padding: 10px 0px;
+            }
+
+            #modalHeader{
+                display: flex;
+                justify-content: end;
+                border-bottom: 1px solid #d3d3d3;
+                padding-bottom: 15px;
+            }
+
+            #kapat{
+                cursor: pointer;
+            }
+        </style>
+
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div><button id="ac">Modal Aç</button></div>
+
+        <div id="container">
+            <div id="myModal">
+                <div id="modalHeader">
+                    <span id="kapat" type="button">X</span>
+                </div>
+                <div id="modalBody">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nulla iure, voluptatem facere magni accusantium corrupti
+                        cum quas, nesciunt necessitatibus quod. Enim similique voluptatum rerum veritatis nam amet molestiae minus deleniti. Quibusdam
+                        fugiat minus veritatis nobis quis nemo aliquid, amet vitae, maxime ratione, saepe laudantium rem perferendis impedit odit
+                        expedita?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nulla iure, voluptatem facere magni accusantium corrupti
+                        cum quas, nesciunt necessitatibus quod. Enim similique voluptatum rerum veritatis nam amet molestiae minus deleniti. Quibusdam
+                        fugiat minus veritatis nobis quis nemo aliquid, amet vitae, maxime ratione, saepe laudantium rem perferendis impedit odit
+                        expedita?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nulla iure, voluptatem facere magni accusantium corrupti
+                        cum quas, nesciunt necessitatibus quod. Enim similique voluptatum rerum veritatis nam amet molestiae minus deleniti. Quibusdam
+                        fugiat minus veritatis nobis quis nemo aliquid, amet vitae, maxime ratione, saepe laudantium rem perferendis impedit odit
+                        expedita?</p> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur nulla iure, voluptatem facere magni
+                        accusantium corrupti
+                        cum quas, nesciunt necessitatibus quod. Enim similique voluptatum rerum veritatis nam amet molestiae minus deleniti. Quibusdam
+                        fugiat minus veritatis nobis quis nemo aliquid, amet vitae, maxime ratione, saepe laudantium rem perferendis impedit odit
+                        expedita?</p>
+                </div>
+            </div>
+        </div>
+
+        <div><button>Düğme</button></div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
